@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+body {
+    background-image: url(kukat.jpg);
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 20%;
+}
+
+#a {
+    position: absolute;
+    animation: move 3s infinite;
+    left: 100%;
+}
+
+#a img {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes move {
+    from {
+        right: 700px;
+    }
+    to {
+        left:300px;
+    }
+}
+
+#b img {
+    position: relative;
+    animation: move 4s infinite;
+    left: 100%;
+    width: 10%;
+    height: 10%;
+}
+
+    </style>
+    <title>Mehiläinen</title>
+</head>
+<body>
+    <div id="a">
+        <img src="bee.png" alt="">
+    </div>
+    <div id="b">
+        <img src="bee.png" alt="">
+    </div>
+</body>
+</html>
